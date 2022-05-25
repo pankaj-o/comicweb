@@ -1,13 +1,12 @@
 import React from 'react'
 import "./Navbar.css"
-import img from "./logo1.png"
+import img from "./logo12.jpg"
 
 export default function Navbar() {
     return (
         <div className="navbar">
-            <div className="logo">
-                style={{backgroundImage:`url(${img})`}}
-                {/* <a href="#"><img src={'img'} alt="logo" /></a> */}
+            <div className="logo" style={{backgroundImage:`url(${img})`}}>
+                
             </div>
             <div className="navbar_maincentre">
                 <ul className="navbarcentrelist">
