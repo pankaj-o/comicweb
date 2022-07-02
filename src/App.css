@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+.body{
+background-color: #61dafb;
+border: 2px solid rgb(7, 5, 5);
+display: flex;
+}
+.leftcontainer{
+  background-color: #fb6178;
+  width: 60%;
+  align-items:center;
+  
+}
+.leftcontainercard{
+  display: flex;
+
+}
+.rightcontainer{
+  display: grid;
+  width: 40%;
+  background-color: #61fb78;
+  
+  
+}
+.rightcontainer ul{
+  list-style: none;
+  display: flex;
+}

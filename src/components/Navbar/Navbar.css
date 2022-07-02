@@ -1,17 +1,22 @@
 * {
     margin: auto;
     padding: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .logo {
     height: 80px;
     width: 80px;
+    border-radius: 50px;
+    background-image: url(D:\project\comic_app\src\components\Navbar\logo12.jpg);
+    background-repeat: none;
+    background: size 1px;;
 }
 
 .navbar {
     display: flex;
-    background: #252631;
-    height: 115px;
+    background: rgb(213, 222, 222);
+    height: 80px;
     align-items: center;
 }
 
@@ -27,30 +32,30 @@
 .navbarcentrelist {
     display: flex;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 .listitemcentre {
-    box-shadow: 3px -3px 5px green;
     font-weight: 700;
     text-transform: uppercase;
     color: #edefe0;
-    padding: 25px 27px;
+    padding: 15px 15px;
     display: block;
     line-height: 1;
-    text-shadow: #e4d804;
+    margin: 7px;
+    letter-spacing: 3px;
+   
 }
+
 
 .navbarrightlist {
     list-style: none;
     display: flex;
-    padding: 10px 10px;
+    
 }
 
-.list_item_right_search {
-    padding: 10px 10px;
-}
+
+
 
 .list_item_right_signin {
     padding: 10px 10px;
@@ -58,38 +63,17 @@
 
 .search input {
     border: none;
-    background: #12151e;
+    background: #bfc5da;
     color: #fff;
-    padding: 13px 9px;
-    font-size: 14px;
-    border-radius: 30px;
-    margin: 5px;
+    padding: 13px ;
+    font-size: 17px;
+  
 }
 
 .search button {
     border: none;
-    background: #12151e;
-    color: #fff;
     padding: 14px 20px;
-    font-size: 12px;
-    border-radius: 30px;
-    padding-right: 60px;
-    margin: 5px;
+    font-size: 15px;
+    
 }
 
-.buttonsignin {
-    user-select: none;
-    -moz-user-select: none;
-    background: #12151e none repeat scroll 0 0;
-    border: 2px solid #e4d804;
-    border-radius: 50px;
-    color: #e3dfdf;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding: 14px 25px;
-    text-transform: uppercase;
-}
