@@ -1,23 +1,32 @@
 import React, { useEffect, useState } from "react"; //imr
 import "./Card.css";
-import axios from "axios";
-import img from "./logo.jpg"
+
+import getApiData from "../../Service/Service";
+
 
 export default function Card() {
+  
   const [data, setData] = useState([]);
+  const[page,setPage]=useState(1)
+ const FetchData=async()=>{
+  const Response=await getApiData(page)
+  setData(Response)
+ }
   useEffect(() => {
-    const apidata = () => {
-      axios
-        .get(
-          "https://newsapi.org/v2/top-headlines?country=in&apiKey=46affd9e463649188755518362275b03"
-        )
-        .then((response) => {
-          // console.log(response);
-          setData(response.data.articles);
-        });
-    };
-    apidata();
-  }, []);
+    FetchData()
+  }, [page]);
+  const previous=()=>{
+    
+    setPage(page-1)
+   
+  }
+  const next=()=>{
+
+    setPage(page+1)
+    window.scrollTo(0,0)
+   
+
+  }
 
  
   return (
@@ -41,14 +50,18 @@ export default function Card() {
           <div id="sharemore">
           
             <div id="readmore">
-             <a href={val.url}> Read More</a>
+             <a href={val.url} target="_blank"> Read More</a>
             </div>
-            <div id="share">Share</div>
+            
           </div>
         </div>
         )
       })
     }
+    </div>
+    <div id="pagechange">
+     {page==1 || <button className="npbutton1 nepr" onClick={previous} >&larr;Previous</button>}
+      <button className="npbutton2  nepr" onClick={next}>Next &rarr; </button>
     </div>
      </div>
     </>

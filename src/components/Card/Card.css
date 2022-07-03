@@ -5,13 +5,14 @@
 }
 #container  {
     background-color: #f2f2f2; 
+    position:absolute;
     width: 100%;
 }
 #container h1 {
-    background-color: #f2f2f2; 
-    display: flex;
-    justify-content: center;
-    font-size: 5rem ;
+    background-color: #f2f2f2;
+    text-align: center; 
+    
+    font-size: 4rem ;
 }
 #cards {
    
@@ -32,16 +33,21 @@
   height: auto;
   min-height: 100%;
   
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #image {
   height: auto;
+
   
 
 }
 #image img {
   width: 100%;
   height: auto;
+  min-height: 250px;
+  max-height: 250px;
+  min-width: 300px;
+  max-width: 300px;
   display: block;
 }
 #heading {
@@ -69,4 +75,32 @@
 #readmore {
   margin: 3px;
 }
+#pagechange{
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+}
+.nepr{
+  
+  
+  cursor: pointer;
+  border: none;
+  padding: 3px;
+}
+
+.npbutton1{
+  font-size: 1.5rem;
+  position: absolute;
+  left: 20%;
+  
+}
+.npbutton2{
+  position: absolute;
+  right: 20%;
+
+  
+  font-size: 1.5rem;
+
+}
+
 

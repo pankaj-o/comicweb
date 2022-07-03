@@ -27,7 +27,7 @@ export default function Navbar() {
                     <li className="list_item_right_search">
                         <div className="search">
                             <form  className="searchform"action="#">
-                                <input classnametype="text" placeholder="Search"></input>
+                                {/* <input classnametype="text" placeholder="Search"></input> */}
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </form>
                         </div>
